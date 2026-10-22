@@ -1,0 +1,44 @@
+.homepage {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 4vw, 48px);
+}
+
+.avatar-stage {
+  width: min(100%, 640px);
+  text-align: center;
+}
+
+.avatar-stage > div:first-child {
+  width: 100%;
+  height: clamp(340px, 62svh, 520px) !important;
+}
+
+.avatar-stage canvas { touch-action: pan-y; }
+.avatar-caption {
+  margin: 0;
+  font-size: clamp(24px, 4vw, 32px);
+  letter-spacing: -0.04em;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.avatar-caption span {
+  display: block;
+  margin-top: 12px;
+  color: #6c5b7d;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.6;
+}
+.avatar-fallback {
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  color: #6c5b7d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avatar-caption span { display: none; }
+}
