@@ -5,6 +5,19 @@
   padding: clamp(16px, 4vw, 48px);
 }
 
+.cursor-trail {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@media (prefers-reduced-motion: reduce), (hover: none), (pointer: coarse) {
+  .cursor-trail { display: none; }
+}
+
 .avatar-stage {
   width: min(100%, 640px);
   text-align: center;
@@ -26,7 +39,7 @@
 .avatar-caption span {
   display: block;
   margin-top: 12px;
-  color: #6c5b7d;
+  color: #b9cee7;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0;
@@ -36,7 +49,7 @@
   display: grid;
   place-items: center;
   padding: 32px;
-  color: #6c5b7d;
+  color: #d4e5f7;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -65,3 +65,5 @@ credentials*.json
 !/public/models/
 /public/models/*
 !/public/models/my-avatar-head-refined.glb
+!/public/models/my-avatar-eye-prototype-neutral.glb
+!/public/models/avatar-eye-prototype/
